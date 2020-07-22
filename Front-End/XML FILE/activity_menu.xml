@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_backgound"
+    tools:context=".Menu">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="146dp"
+        android:layout_height="168dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@mipmap/gogreen" />
+
+    <Button
+        android:id="@+id/buttonEdit"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/mybutton"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:text="Edit Profile" />\
+
+    <Button
+        android:id="@+id/receiptInbox"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/buttonSend"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/mybutton"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/ic_action_message"
+        android:text="Receipt Inbox"
+        />
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/buttonEdit"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/mybutton"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/ic_action_send"
+        android:text="Send Receipt"
+        />
+
+    <Button
+        android:id="@+id/ReceiptRecord"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/receiptInbox"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/mybutton"
+        android:drawableLeft="@drawable/ic_action_message"
+        android:layout_marginTop="30dp"
+        android:text="Receipt Record" />
+
+    <Button
+        android:id="@+id/ReceiptStorage"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/ReceiptRecord"
+        android:layout_alignLeft="@+id/buttonEdit"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/mybutton"
+        android:drawableLeft="@drawable/ic_action_store"
+        android:text="Receipt Storage" />
+</RelativeLayout>

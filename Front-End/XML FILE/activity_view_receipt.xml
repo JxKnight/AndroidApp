@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_backgound"
+    tools:context=".ReceiptInboxAddCatogories">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@mipmap/gogreen" />
+
+    <ImageView
+        android:id="@+id/receiptImage"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:background="#11000000"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView"
+        />
+
+    <TextView
+        android:id="@+id/receiptId"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/receiptImage"
+        android:text="Receipt ID :"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/receiptIdText"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:background="#11000000"
+        android:layout_below="@+id/receiptImage"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/SenderDate"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/receiptId"
+        android:text="Sender ID :"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/ReceiverId"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/SenderDate"
+        android:text="Receiver ID :"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/SenderIdText"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:background="#11000000"
+        android:layout_below="@+id/receiptIdText"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/ReceiverIdText"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:background="#11000000"
+        android:layout_below="@+id/SenderIdText"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/ReceiverId"
+        android:text="Date :"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:background="#11000000"
+        android:layout_below="@+id/ReceiverIdText"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/date"
+        android:layout_marginTop="20dp"
+        />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@id/descriptionText"
+        />
+
+    <TextView
+        android:id="@id/textCatogoriest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please select the catogories"
+        android:textStyle="bold"
+        android:layout_below="@+id/listview"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textCatogoriest"
+        android:layout_marginTop="10dp"
+        android:entries="@array/catogories_array"
+        android:prompt="@string/catogories_prompt"/>
+
+    <Button
+        android:id="@+id/buttonAddCatogories"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/spinner1"
+        android:layout_centerHorizontal="true"
+        android:text="Send"
+        android:background="@drawable/mybutton"
+        />
+
+
+
+
+
+</RelativeLayout>
